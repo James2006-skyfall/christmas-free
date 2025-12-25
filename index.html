@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Merry Christmas 🎄</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Merry Christmas 🎄</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🎄 Merry Christmas 🎄</h1>
-    
-    <p>
-Wishing you a peace, joy, and happiness.<br>
-May this Christmas bring love, warmth, and good health ✨
-</p>
+    <div class="container">
+        <h1>🎄 Merry Christmas 🎄</h1>
 
-<p>– From Ariel ❤️</p>
+        <p>
+            Wishing you a peace, joy, and happiness.<br>
+            May this Christmas bring love, warmth, and good health ⭐
+        </p>
 
-    <a href="notes.html" class="button">Open Notes 💌</a>
-    <button id="music-toggle" class="button music-toggle" aria-pressed="false">🔈 Music OFF</button>
-  </div>
+        <p>— From Ariel ❤️</p>
 
-  <script src="script.js"></script>
+        <!-- Play Christmas Music Button -->
+        <button onclick="document.getElementById('music').play()" class="button">
+            🎄 Play Christmas Music
+        </button>
+
+        <!-- Your existing buttons -->
+        <a href="notes.html" class="button">Open Notes 📝</a>
+        <button id="music-toggle" class="button music-toggle" aria-pressed="false">🎵 Music OFF</button>
+
+        <!-- Hidden audio player with loop -->
+        <audio id="music" src="assets/christmas.mp3" preload="auto" loop></audio>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
